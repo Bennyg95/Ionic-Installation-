@@ -1,7 +1,12 @@
 # Ionic-Installation-
-A file that installs ionic for me
 
-In order to install ionic you need to:
+# This will install:
+  *npm
+  *Apache Cordova
+  *Ionic framework
+
+
+#Instructions
    * clone this repository
    * run 'sh ionicInstall.sh'
 
