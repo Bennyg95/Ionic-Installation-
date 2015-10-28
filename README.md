@@ -19,6 +19,11 @@ In order to test you should create a new ionic project:
 *********************************************************
 Testing with web browser
 
+* Navigate into the project folder
+  * run 'ionic serve'
+
+or
+
 * Navigate to projName/www
 * Here you'll see the index.html
 
