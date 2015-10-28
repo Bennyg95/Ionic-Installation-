@@ -52,6 +52,10 @@ export PATH=$PATH:$NODE_PATH/bin
 
 fi
 
+clear
+echo "Installing npm"
+sudo apt-get install npm
+
 #install apache cordova
 clear
 echo "Installing cordova"
