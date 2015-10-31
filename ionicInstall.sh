@@ -39,6 +39,9 @@ cd
 
 fi
 
+sudo apt-get install nodejs
+sudo apt-get install npm
+
 #install apache cordova
 clear
 echo "Installing cordova"
