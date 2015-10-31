@@ -29,29 +29,15 @@ if ["$LINUX_ARCH" == "x86_64" ]; then
 
     tar zxf "node-v4.2.1-linux-x64.tar.gz" -C "$INSTALL_PATH"
 
-    cd "$INSTALL_PATH" && mv "node-v4.2.1-linux-x64.tar.gz" "node"
-
 else
 
     wget "http://nodejs.org/dist/node-v4.2.1-linux-x86.tar.gz"
 
     tar zxf "node-v4.2.1-linux-x86.tar.gz" -C "$INSTALL_PATH"
 
-    cd "$INSTALL_PATH" && mv "node-v4.2.1-linux-x86" "node"
-
-cd ~/
-
-# adding NPM path to profile
-echo "export PATH=\$PATH:$NODE_PATH/bin" >> ".profile"
-
-# adding NPM path to temp user to complete installation
-export PATH=$PATH:$NODE_PATH/bin
+cd
 
 fi
-
-clear
-echo "Installing npm"
-sudo apt-get install npm
 
 #install apache cordova
 clear
@@ -71,12 +57,7 @@ clear
 echo "Installing ionic"
 sudo npm install -g ionic
 
-cd "$INSTALL_PATH" && chmod 777 "node" -R
-
 #clean up
 clear
-echo "cleaning..."
-cd ~/Downloads && rm "nodejs.tgz"
-
 echo "------------------------------------"
 echo "Restart you session for installation to complete."
