@@ -32,12 +32,11 @@
 
 ####Testing with web browser
 
-	  Navigate into the project folder
-	  ```
-		cd projName
-	  ```
-
-	  run project
-	  ```
-		ionic serve
-	  ```
+  Navigate into the project folder
+  ```
+	cd projName
+  ```
+  run project
+  ```
+	ionic serve
+  ```
