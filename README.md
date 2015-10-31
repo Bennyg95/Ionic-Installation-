@@ -9,12 +9,12 @@
 ```
 
 ###Instructions
-  clone this repository
+  #####clone this repository
    ```
 	git clone https://github.com/Bennyg95/Ionic-Installation-.git
    ```
 
-   Move into Ionic-Installation-
+   #####Move into Ionic-Installation-
    ```
 	cd Ionic-Installation-/
    ```
@@ -24,19 +24,18 @@
 	sh ionicInstall.sh
    ```
 
-####Starting ionic project
+###Starting ionic project
 ```
     ionic start projName
-    cd projName
 ```
 
-####Testing with web browser
+###Testing with web browser
 
-  Navigate into the project folder
+  #####Navigate into the project folder
   ```
 	cd projName
   ```
-  run project
+  #####Running project
   ```
 	ionic serve
   ```
