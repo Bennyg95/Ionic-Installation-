@@ -9,36 +9,33 @@
 # * Ionic Framework
 # **********************************************
 
-HOME_PATH = $(cd ~/ && pwd)
+cd
 INSTALL_PATH=/opt
 NODE_PATH=/opt/node
 
 LINUX_ARCH="$(lscpu | grep 'Architechture' | awk -F\: '{ print $2 }' | tr -d ' ')"
 
-# Latest NodeJS for x64 and x86 as of 10-19-2014
-NODE_X64="http://nodejs.org/dist/node-v4.2.1-darwing-x64.tar.gz"
-NODE_X86="http://nodejs.org/dist/node-v4.2.1-linux-x86.tar.gz"
-
 echo "Update..."
 echo
 sudo apt-get update
+
 clear
 echo "Downloading nodejs"
 
 cd ~/Downloads
 
 if ["$LINUX_ARCH" == "x86_64" ]; then
-    wget "$NODE_X64" -O "nodejs.tgz"
+    wget "http://nodejs.org/dist/node-v4.2.1-linux-x64.tar.gz"
 
-    tar zxf "nodejs.tgz" -C "$INSTALL_PATH"
+    tar zxf "node-v4.2.1-linux-x64.tar.gz" -C "$INSTALL_PATH"
 
-    cd "$INSTALL_PATH" && mv "node-v4.2.1-darwing-x64" "node"
+    cd "$INSTALL_PATH" && mv "node-v4.2.1-linux-x64.tar.gz" "node"
 
 else
 
-    wget "$NODE_X86" -O "nodejs.tgz"
+    wget "http://nodejs.org/dist/node-v4.2.1-linux-x86.tar.gz"
 
-    tar zxf "nodejs.tgz" -C "$INSTALL_PATH"
+    tar zxf "node-v4.2.1-linux-x86.tar.gz" -C "$INSTALL_PATH"
 
     cd "$INSTALL_PATH" && mv "node-v4.2.1-linux-x86" "node"
 
