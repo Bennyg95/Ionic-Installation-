@@ -27,13 +27,13 @@ cd ~/Downloads
 if ["$LINUX_ARCH" == "x86_64" ]; then
     wget "http://nodejs.org/dist/node-v4.2.1-linux-x64.tar.gz"
 
-    tar zxf "node-v4.2.1-linux-x64.tar.gz" -C "$INSTALL_PATH"
+    tar xvzf "node-v4.2.1-linux-x64.tar.gz"
 
 else
 
     wget "http://nodejs.org/dist/node-v4.2.1-linux-x86.tar.gz"
 
-    tar zxf "node-v4.2.1-linux-x86.tar.gz" -C "$INSTALL_PATH"
+    tar xvzf "node-v4.2.1-linux-x86.tar.gz"
 
 cd
 
