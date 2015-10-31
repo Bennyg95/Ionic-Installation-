@@ -1,33 +1,43 @@
 # Ionic-Installation-
 
-# This will install:
-  *npm
-  *Apache Cordova
-  *Ionic framework
+## This will set up the ionic working environment
+Alt-H1
+### The following will be downloaded and installed:
+  ..*npm
+  ..*Apache Cordova
+  ..*Ionic framework
 
 
 #Instructions
-   * clone this repository
-   * run 'sh ionicInstall.sh'
+   ..* clone this repository
+   ```
+	git clone https://github.com/Bennyg95/Ionic-Installation-.git
+   ```
 
-In order to test you should create a new ionic project:
+   ..* Move into Ionic-Installation-
+   ```
+	cd Ionic-Installation-/
+   ```
 
-   * ionic start projName
-   * cd projName
+   ..* run the .sh file
+   ```
+	sh ionicInstall.sh
+   ```
 
+#In order to test you should create a new ionic project:
+```
+    ionic start projName
+    cd projName
+```
 
-*********************************************************
-Testing with web browser
+##Testing with web browser
 
-* Navigate into the project folder
-  * run 'ionic serve'
+	  ..* Navigate into the project folder
+	  ```
+		cd projName
+	  ```
 
-or
-
-* Navigate to projName/www
-* Here you'll see the index.html
-
-* open index.html with your web browser
-  * ex: firefox index.html
-
-*********************************************************
+	  ..* *run project
+	  ```
+		ionic serve
+	  ```
