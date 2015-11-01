@@ -13,8 +13,6 @@ cd
 INSTALL_PATH=/opt
 NODE_PATH=/opt/node
 
-LINUX_ARCH="$(lscpu | grep 'Architechture' | awk -F\: '{ print $2 }' | tr -d ' ')"
-
 echo "Update..."
 echo
 sudo apt-get update
@@ -24,7 +22,7 @@ echo "Downloading nodejs"
 
 cd ~/Downloads
 
-if ["$LINUX_ARCH" == "x86_64" ]; then
+if ['getconf LONG_BIT' == "64"]; then
     wget "http://nodejs.org/dist/v4.2.1/node-v4.2.1-linux-x64.tar.gz"
 
     tar xvzf "node-v4.2.1-linux-x64.tar.gz"
