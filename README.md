@@ -21,7 +21,7 @@
 
 #####run the .sh file
    ```
-	sh ionicInstall.sh
+	sh ionic.sh
    ```
 
 ###Starting ionic project
@@ -33,9 +33,10 @@
 
 #####Navigate into the project folder
   ```
-	cd projName
+	cd projName/
+	cd www/
   ```
 #####Running project
   ```
-	ionic serve
+	firefox index.html
   ```
