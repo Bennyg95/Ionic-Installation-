@@ -10,4 +10,4 @@ sudo apt-get install nodejs
 
 sudo apt-get install build-essential
 
-sudo npm install -g cordova
+sudo npm install -g cordova ionic
